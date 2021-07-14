@@ -1,3 +1,4 @@
+### C++ ###
 # Prerequisites
 *.d
 
@@ -30,6 +31,9 @@
 *.exe
 *.out
 *.app
+
+# Visual Studio folders
+.vs/
 
 # custom build
 build/
