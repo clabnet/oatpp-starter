@@ -58,4 +58,7 @@ add_test(project-tests ${project_name}-test)
 ## define path to swagger-ui res folder
 add_definitions( 
     -DOATPP_SWAGGER_RES_PATH="${OATPP_BASE_DIR}/bin/oatpp-swagger/res"
-) 
+)
+
+# remove msg "PDB <dependency>.pdb not found" warning in Visual Studio
+set_target_properties(${project_name}-lib ${project_name}-exe ${project_name}-test PROPERTIES LINK_FLAGS "/ignore:4099")
