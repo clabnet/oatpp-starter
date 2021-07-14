@@ -88,6 +88,6 @@ jobs:
         displayName: 'Build - Project'
         workingDirectory: build
       - script: |
-          my-project-test.exe
+          oatpp-starter-test.exe
         displayName: 'Test'
         workingDirectory: build\Debug\
